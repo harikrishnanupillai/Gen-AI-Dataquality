@@ -1,2 +1,4 @@
-# Gen-AI-Dataquality
-To check data quality of the migrated data using python and GenAi capabilities.
+
+# Data quality check using OpenAI text generation and Python
+
+Install the required the dependencies using 'pip install -r requirements.txt'

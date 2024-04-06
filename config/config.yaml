@@ -1,0 +1,23 @@
+source_table: EMPLOYEES_SOURCE
+target_table: EMPLOYEES_TARGET
+
+pattern_check:
+  column_name: EMAIL
+  pattern: "Can start with anything but should end with @DOMAIN.COM"
+
+range_check:
+  column_name: SAL
+  min_value: 50000
+  max_value: 200000
+
+accepted_values:
+  column_name: GENDER
+  accepted_values_list: 
+    - M
+    - F
+    - O
+
+referential_integrity:
+  reference_table: DEPARTMENTS
+  child_column: DEPARTMENT
+  parent_column: DEPTNAME
